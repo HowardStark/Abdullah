@@ -1,0 +1,12 @@
+#JSGF V1.0;
+
+grammar abdulla;
+
+<greet> =  okay;
+public <start> = [<greet>] abdullah [<command>] {START};
+public <command> = [<fluff>+] <action> [<fluff>+];
+<action> = open {OPEN} | opening {OPEN} | run {OPEN} | close {CLOSE} | closing {CLOSE} | search {SEARCH} | weather {WEATHER} | time {TIME} | train {TRAIN};
+<fluff> = please | would you [mind] | could you | possibly | can you | may i | thanks | thank you | very much | what is the | how is the | like | out | what | is [the] [it] | tell me | when is the [next] | when does [the] | leave;
+public <final> = exit;
+
+//Example: Okay Abdullah,
