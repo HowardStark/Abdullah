@@ -108,7 +108,7 @@ public class Abdulla {
     }
 
     public static void setLocalInformation() throws Exception{
-        URL whatismyip = new URL("https://context.skyhookwireless.com/accelerator/ip?version=2.0&key=eJwVwcENwCAMA8A3w0SyqULqbwIshdi96h0b8XsCvZ0Sd4KyrEjjECyjYPv1oeXRfep-EQMLHQ&user=abdulla");
+        URL whatismyip = new URL("https://context.skyhookwireless.com/accelerator/ip?version=2.0&key=&user=abdulla");
         BufferedReader in = new BufferedReader(new InputStreamReader(
                 whatismyip.openStream()));
         String json = in.readLine();
